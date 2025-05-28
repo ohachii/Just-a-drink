@@ -1,312 +1,464 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Just a Drink - Categorias</title>
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Navbar fixa -->
     <nav class="navbar bg-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="icons/logo.png" alt="Logo" width="30" height="24">
-                Just a Drink
-            </a>
-        </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="icons/logo.png" alt="Logo" width="30" height="24" />
+          Just a Drink
+        </a>
+      </div>
     </nav>
 
     <!-- Menu também fixo -->
     <ul class="nav nav-pills menu-estilo">
-        <li class="nav-item">
-            <a class="nav-link texto-nav" href="#">Início</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" style="background-color: white; color: black;">Categorias</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link texto-nav" href="#">Quem Somos</a>
-        </li>
+      <li class="nav-item">
+        <a class="nav-link texto-nav" href="#">Início</a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          aria-current="page"
+          href="#"
+          style="background-color: white; color: black"
+          >Categorias</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link texto-nav" href="#">Quem Somos</a>
+      </li>
     </ul>
 
     <!-- Banner - começa no topo, sob a navbar -->
     <div class="banner-container">
-        <img src="icons/image-categorias-nav.png" class="img-fluid banner-img" alt="Banner">
+      <img
+        src="icons/image-categorias-nav.png"
+        class="img-fluid banner-img"
+        alt="Banner"
+      />
     </div>
 
-    <div style="margin-top: 20px; margin-left: 30px;">
-        <button type="button" class="btn btn-secondary butoes-cat">CATEGORIAS DE DRINKS</button>
+    <div style="margin-top: 20px; margin-left: 30px">
+      <button type="button" class="btn btn-secondary butoes-cat">
+        CATEGORIAS DE DRINKS
+      </button>
     </div>
 
     <!-- CATEGORIAS -->
     <div class="centralizacao-categorias">
-        <div class="container mt-4">
-            <div class="row justify-content-around">
-                <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                    <a href="classicos.html" style="text-decoration: none; color: inherit; width: 100%;">
-                        <div class="card card-categorias w-100">
-                            <img src="img/card-classicos.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <img src="icons/icon-categorias-classicos.png" alt="" class="tam-icon-categoria">
-                                <p class="card-text">Clássicos</p>
-                            </div>
-                        </div>
-                    </a>
+      <div class="container mt-4">
+        <div class="row justify-content-around">
+          <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <a
+              href="classicos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
+              <div class="card card-categorias w-100">
+                <img
+                  src="img/card-classicos.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <img
+                    src="icons/icon-categorias-classicos.png"
+                    alt=""
+                    class="tam-icon-categoria"
+                  />
+                  <p class="card-text">Clássicos</p>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                    <div class="card card-categorias w-100">
-                        <img src="img/card-tropicais.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <img src="icons/icon-categorias-tropicais.png" alt="" class="tam-icon-categoria">
-                            <p class="card-text">Tropicais</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                    <div class="card card-categorias w-100">
-                        <img src="img/card-refrescantes.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <img src="icons/icon-categorias-refrescantes.png" alt="" class="tam-icon-categoria">
-                            <p class="card-text">Refrescantes</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                    <div class="card card-categorias w-100">
-                        <img src="img/card-semalcool.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <img src="icons/icon-categorias-classicos.png" alt="" class="tam-icon-categoria">
-                            <p class="card-text">Sem Álcool</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                    <div class="card card-categorias w-100">
-                        <img src="img/card-cremosos.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <img src="icons/icon-categorias-cremosos.png" alt="" class="tam-icon-categoria">
-                            <p class="card-text">Cremosos</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                    <div class="card card-categorias w-100">
-                        <img src="img/card-quentes.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p style="font-weight: normal;">NOVIDADE!</p>
-                            <p class="card-text">Quentes</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <div class="card card-categorias w-100">
+              <img
+                src="img/card-tropicais.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <img
+                  src="icons/icon-categorias-tropicais.png"
+                  alt=""
+                  class="tam-icon-categoria"
+                />
+                <p class="card-text">Tropicais</p>
+              </div>
             </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <div class="card card-categorias w-100">
+              <img
+                src="img/card-refrescantes.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <img
+                  src="icons/icon-categorias-refrescantes.png"
+                  alt=""
+                  class="tam-icon-categoria"
+                />
+                <p class="card-text">Refrescantes</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <div class="card card-categorias w-100">
+              <img
+                src="img/card-semalcool.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <img
+                  src="icons/icon-categorias-classicos.png"
+                  alt=""
+                  class="tam-icon-categoria"
+                />
+                <p class="card-text">Sem Álcool</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <div class="card card-categorias w-100">
+              <img src="img/card-cremosos.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <img
+                  src="icons/icon-categorias-cremosos.png"
+                  alt=""
+                  class="tam-icon-categoria"
+                />
+                <p class="card-text">Cremosos</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <div class="card card-categorias w-100">
+              <img src="img/card-quentes.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p style="font-weight: normal">NOVIDADE!</p>
+                <p class="card-text">Quentes</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- segunda linha -->
     <div class="centralizacao-categorias">
-        <div class="container mt-4">
-            <div class="row justify-content-around">
-                <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                    <div class="card card-categorias w-100">
-                        <img src="img/card-classicos.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <img src="icons/icon-categorias-saudavel.png" alt="" class="tam-icon-categoria">
-                            <p class="card-text">Saudáveis</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                    <div class="card card-categorias w-100">
-                        <img src="img/card-tropicais.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <img src="icons/icon-categorias-aromatico.png" alt="" class="tam-icon-categoria">
-                            <p class="card-text">Aromáticos</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                    <div class="card card-categorias w-100">
-                        <img src="img/card-refrescantes.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <img src="icons/icon-categorias-batidos.png" alt="" class="tam-icon-categoria">
-                            <p class="card-text">Batidos</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                    <div class="card card-categorias w-100">
-                        <img src="img/card-semalcool.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <img src="icons/icon-categorias-energetico.png" alt="" class="tam-icon-categoria">
-                            <p class="card-text">Energéticos</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                    <div class="card card-categorias w-100">
-                        <img src="img/card-cremosos.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <img src="icons/icon-categorias-short.png" alt="" class="tam-icon-categoria">
-                            <p class="card-text">Short-Drinks</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                    <div class="card card-categorias w-100">
-                        <img src="img/card-quentes.png" class="card-img-top" alt="..." class="tam-icon-categoria">
-                        <div class="card-body">
-                            <img src="icons/icon-categorias-long.png" alt="">
-                            <p class="card-text">Long-Drinks</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container mt-4">
+        <div class="row justify-content-around">
+          <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <div class="card card-categorias w-100">
+              <img
+                src="img/card-classicos.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <img
+                  src="icons/icon-categorias-saudavel.png"
+                  alt=""
+                  class="tam-icon-categoria"
+                />
+                <p class="card-text">Saudáveis</p>
+              </div>
             </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <div class="card card-categorias w-100">
+              <img
+                src="img/card-tropicais.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <img
+                  src="icons/icon-categorias-aromatico.png"
+                  alt=""
+                  class="tam-icon-categoria"
+                />
+                <p class="card-text">Aromáticos</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <div class="card card-categorias w-100">
+              <img
+                src="img/card-refrescantes.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <img
+                  src="icons/icon-categorias-batidos.png"
+                  alt=""
+                  class="tam-icon-categoria"
+                />
+                <p class="card-text">Batidos</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <div class="card card-categorias w-100">
+              <img
+                src="img/card-semalcool.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <img
+                  src="icons/icon-categorias-energetico.png"
+                  alt=""
+                  class="tam-icon-categoria"
+                />
+                <p class="card-text">Energéticos</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <div class="card card-categorias w-100">
+              <img src="img/card-cremosos.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <img
+                  src="icons/icon-categorias-short.png"
+                  alt=""
+                  class="tam-icon-categoria"
+                />
+                <p class="card-text">Short-Drinks</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <div class="card card-categorias w-100">
+              <img
+                src="img/card-quentes.png"
+                class="card-img-top"
+                alt="..."
+                class="tam-icon-categoria"
+              />
+              <div class="card-body">
+                <img src="icons/icon-categorias-long.png" alt="" />
+                <p class="card-text">Long-Drinks</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-
 
     <!-- tipos de destilados -->
-    <div style="margin-top: 20px; margin-left: 30px;">
-        <button type="button" class="btn btn-secondary butoes-cat">TIPOS DE DESTILADOS</button>
+    <div style="margin-top: 20px; margin-left: 30px">
+      <button type="button" class="btn btn-secondary butoes-cat">
+        TIPOS DE DESTILADOS
+      </button>
     </div>
 
     <div class="container mt-4">
-        <div class="row">
-            <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                <a href="vodka.html" style="text-decoration: none; color: inherit;">
-                    <div class="card card-categorias w-100">
-                        <img src="img/card-vodka.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Vodka</p>
-                            <img src="icons/icon-destilados.png" alt="" style="width: 100px;">
-                        </div>
-                    </div>
-                </a>
+      <div class="row">
+        <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <a href="vodka.html" style="text-decoration: none; color: inherit">
+            <div class="card card-categorias w-100">
+              <img src="img/card-vodka.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Vodka</p>
+                <img
+                  src="icons/icon-destilados.png"
+                  alt=""
+                  style="width: 100px"
+                />
+              </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                <div class="card card-categorias w-100">
-                    <img src="img/card-gin.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Gin</p>
-                        <img src="icons/icon-destilados.png" alt="" style="width: 100px;">
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                <div class="card card-categorias w-100">
-                    <img src="img/card-cachaca.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Cachaça</p>
-                        <img src="icons/icon-destilados.png" alt="" style="width: 100px;">
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                <div class="card card-categorias w-100">
-                    <img src="img/card-tequila.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Tequila</p>
-                        <img src="icons/icon-destilados.png" alt="" style="width: 100px;">
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                <div class="card card-categorias w-100">
-                    <img src="img/card-run.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Run</p>
-                        <img src="icons/icon-destilados.png" alt="" style="width: 100px;">
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                <div class="card card-categorias w-100">
-                    <img src="img/card-whisky.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Whisky</p>
-                        <img src="icons/icon-destilados.png" alt="" style="width: 100px;">
-                    </div>
-                </div>
-            </div>
+          </a>
         </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <div class="card card-categorias w-100">
+            <img src="img/card-gin.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Gin</p>
+              <img
+                src="icons/icon-destilados.png"
+                alt=""
+                style="width: 100px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <div class="card card-categorias w-100">
+            <img src="img/card-cachaca.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Cachaça</p>
+              <img
+                src="icons/icon-destilados.png"
+                alt=""
+                style="width: 100px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <div class="card card-categorias w-100">
+            <img src="img/card-tequila.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Tequila</p>
+              <img
+                src="icons/icon-destilados.png"
+                alt=""
+                style="width: 100px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <div class="card card-categorias w-100">
+            <img src="img/card-run.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Run</p>
+              <img
+                src="icons/icon-destilados.png"
+                alt=""
+                style="width: 100px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <div class="card card-categorias w-100">
+            <img src="img/card-whisky.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Whisky</p>
+              <img
+                src="icons/icon-destilados.png"
+                alt=""
+                style="width: 100px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-        <!-- tipos de licor -->
-    <div style="margin-top: 20px; margin-left: 30px;">
-        <button type="button" class="btn btn-secondary butoes-cat">TIPOS DE LICORES</button>
+    <!-- tipos de licor -->
+    <div style="margin-top: 20px; margin-left: 30px">
+      <button type="button" class="btn btn-secondary butoes-cat">
+        TIPOS DE LICORES
+      </button>
     </div>
 
     <div class="container mt-4">
-        <div class="row">
-            <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                <div class="card card-categorias w-100">
-                    <img src="img/campari.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Campari</p>
-                        <img src="icons/icon-destilados.png" alt="" style="width: 100px;">
-                    </div>
-                </div>
+      <div class="row">
+        <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <div class="card card-categorias w-100">
+            <img src="img/campari.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Campari</p>
+              <img
+                src="icons/icon-destilados.png"
+                alt=""
+                style="width: 100px"
+              />
             </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                <div class="card card-categorias w-100">
-                    <img src="img/licor43.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Licor 43</p>
-                        <img src="icons/icon-destilados.png" alt="" style="width: 100px;">
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                <div class="card card-categorias w-100">
-                    <img src="img/grandManier.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Grand Manier</p>
-                        <img src="icons/icon-destilados.png" alt="" style="width: 100px;">
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                <div class="card card-categorias w-100">
-                    <img src="img/aperol.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Aperol</p>
-                        <img src="icons/icon-destilados.png" alt="" style="width: 100px;">
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                <div class="card card-categorias w-100">
-                    <img src="img/malibu.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Malibu</p>
-                        <img src="icons/icon-destilados.png" alt="" style="width: 100px;">
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-                <div class="card card-categorias w-100">
-                    <img src="img/frangelico.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Frangelico</p>
-                        <img src="icons/icon-destilados.png" alt="" style="width: 100px;">
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <div class="card card-categorias w-100">
+            <img src="img/licor43.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Licor 43</p>
+              <img
+                src="icons/icon-destilados.png"
+                alt=""
+                style="width: 100px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <div class="card card-categorias w-100">
+            <img src="img/grandManier.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Grand Manier</p>
+              <img
+                src="icons/icon-destilados.png"
+                alt=""
+                style="width: 100px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <div class="card card-categorias w-100">
+            <img src="img/aperol.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Aperol</p>
+              <img
+                src="icons/icon-destilados.png"
+                alt=""
+                style="width: 100px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <div class="card card-categorias w-100">
+            <img src="img/malibu.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Malibu</p>
+              <img
+                src="icons/icon-destilados.png"
+                alt=""
+                style="width: 100px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <div class="card card-categorias w-100">
+            <img src="img/frangelico.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Frangelico</p>
+              <img
+                src="icons/icon-destilados.png"
+                alt=""
+                style="width: 100px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer class="footer">
-         <h2>JUST A DRINK </h2>
-            <p>SIGA OS AUTORES</p>
-            <img src="icons/icons-footer.png" alt="" class="img-footer">
-            <p class="rights">© - TODOS OS DIREITOS RESERVADOS</p>
+      <h2>JUST A DRINK</h2>
+      <p>SIGA OS AUTORES</p>
+      <img src="icons/icons-footer.png" alt="" class="img-footer" />
+      <p class="rights">© - TODOS OS DIREITOS RESERVADOS</p>
     </footer>
 
-    <script src="https://kit.fontawesome.com/SEU_CODIGO.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/SEU_CODIGO.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
