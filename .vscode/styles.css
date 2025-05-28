@@ -1,0 +1,117 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Navbar fixa no topo */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Menu fixo abaixo da navbar */
+.menu-estilo {
+    background-color: #2D4363;
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    top: 56px; /* Altura da navbar */
+    width: 100%;
+    z-index: 1040;
+    margin: 0;
+}
+
+.texto-nav {
+    color: white;    
+    margin: 0;
+}
+
+.banner-container {
+    position: relative;
+    margin-top: 0; /* Removemos o margin-top anterior */
+    z-index: 1;
+}
+
+.banner-img {
+    width: 100%;
+    display: block;
+    border-radius: 0;
+    margin-top: 56px; /* Apenas a altura da navbar */
+}
+
+.content-area {
+    padding-top: 56px; /* Apenas a altura do menu */
+    position: relative;
+    z-index: 2;
+}
+.butoes-cat{
+    background-color: #2E2E2E; 
+    border-top-left-radius: 0; 
+    border-top-right-radius: 20px; 
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    font-weight: bold;
+}
+.card-categorias{
+    background-color:#1F1F1F;
+    padding: 10px;
+    color: white;
+
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.tam-icon-categoria{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.centralizacao-categorias{
+    justify-content: space-around !important;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.footer {
+  background-color: #2d4263;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 60px 60px 0 0;
+  border: 2px solid #00aaff;
+  color: white;
+}
+
+.footer h2 {
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.footer p {
+  margin: 15px 0;
+}
+.img-footer {
+  width: 200px;
+  height: 30px;
+}
+
+.voltar{
+    width: 30px;
+    height: 30px;
+}
+.card-navegacao{
+    background-color:#1F1F1F;
+    padding: 10px;
+    color: white;
+}

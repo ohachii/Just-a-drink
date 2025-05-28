@@ -1,0 +1,20 @@
+body {
+    background-color: aliceblue;
+}
+
+.menu-estilo {
+    background-color: #2D4363;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.texto-nav {
+    color: white;
+}
+
+.banner-img {
+    width: 100%;
+    margin-top: 20px;     /* Espaço abaixo do menu */
+    border-radius: 15px;  /* Bordas arredondadas */
+    display: block;
+}
