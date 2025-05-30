@@ -1,0 +1,108 @@
+* {
+  font-family: "Satoshi", bold;
+}
+body {
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
+.descricao {
+  color: white;
+}
+.tempo-preparo {
+  color: #dddbdb;
+  font-weight: bold;
+}
+/* Navbar fixa no topo */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1050;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu fixo abaixo da navbar */
+.menu-estilo {
+  background-color: #2d4363;
+  border-radius: 10px;
+  padding: 10px;
+  position: fixed;
+  top: 56px; /* Altura da navbar */
+  width: 100%;
+  z-index: 1040;
+  margin: 0;
+}
+
+.texto-nav {
+  color: white;
+  margin: 0;
+}
+.img-meio{
+  display:flex;
+  justify-self: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 30em;
+}
+
+
+.content-area {
+  padding-top: 56px; /* Apenas a altura do menu */
+  position: relative;
+  z-index: 2;
+}
+.butoes-cat {
+  background-color: #2e2e2e;
+  border-top-left-radius: 0;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-weight: bold;
+}
+.titulo-receita,.subtitulo-receita {
+  text-align: center;
+  letter-spacing: 2px;
+}
+.footer {
+  background-color: #2d4263;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 60px 60px 0 0;
+  border: 2px solid #00aaff;
+  color: white;
+}
+
+.footer h2 {
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.footer p {
+  margin: 15px 0;
+}
+.img-footer {
+  width: 200px;
+  height: 30px;
+}
+
+.voltar {
+  width: 30px;
+  height: 30px;
+}
+.titulo-igredientes{
+  font-size: 2em;
+  letter-spacing: 2px;
+  
+}
+
+.final-da-pagina{
+  padding-top:100px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  display: flex;
+  justify-self: center;
+}
