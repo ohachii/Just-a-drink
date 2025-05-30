@@ -1,0 +1,53 @@
+[33mcommit bdea05edf96085fcefc125f767474c11997b1b0f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: ohachii <wederpessoa202@gmail.com>
+Date:   Fri May 30 16:35:10 2025 -0300
+
+    [ Incompleto ] Site de Receitas
+
+[33mcommit 78c901ae64b6fe04587e80fc4e19d20c93cfc4de[m
+Author: Sandro Vitor de Almeida Santos <94575814+theprincejug@users.noreply.github.com>
+Date:   Fri May 30 16:28:16 2025 -0300
+
+    Página de receitas [ Incompleto ]
+
+[33mcommit 6596de88af226ca8863e5b28a8f12d709f2f5689[m[33m ([m[1;31mupstream/main[m[33m, [m[1;31mupstream/HEAD[m[33m)[m
+Merge: 2ccc89a 48992fe
+Author: Weder Santos <86271572+ohachii@users.noreply.github.com>
+Date:   Wed May 28 20:48:55 2025 -0300
+
+    Merge pull request #2 from ohachii/Receita-just-a-drink
+    
+    Correções gerais.
+
+[33mcommit 48992febe5017800c0ed94a0126e99d9169b3bb4[m[33m ([m[1;31mupstream/Receita-just-a-drink[m[33m)[m
+Author: Meli202 <wederpessoa202@gmail.com>
+Date:   Wed May 28 20:46:44 2025 -0300
+
+    [ FIX ] Alteração da fonte para bold
+
+[33mcommit 2ccc89a328447ff629fce28422474b0bfbc8b41a[m
+Merge: 11f4276 962a20a
+Author: Weder Santos <86271572+ohachii@users.noreply.github.com>
+Date:   Wed May 28 20:39:58 2025 -0300
+
+    Merge pull request #1 from ohachii/Receita-just-a-drink
+    
+    [ FIX ] Correções da aba de "Vodka".
+
+[33mcommit 962a20ace087cc0d65183e0ba9e61238545e8eaa[m
+Author: Meli202 <wederpessoa202@gmail.com>
+Date:   Wed May 28 20:39:17 2025 -0300
+
+    [ FIX ] Correções da aba de "Vodka".
+
+[33mcommit 11f42761a778b3d6c7485a8e70e39d9955251c4f[m
+Author: Wagyla <wsm12@aluno.ifnmg.edu.br>
+Date:   Wed May 28 19:22:32 2025 -0300
+
+    primeira parte
+
+[33mcommit 692b86d7c72e8351fa5a455d0d144e48153b96f3[m
+Author: Weder Santos <86271572+ohachii@users.noreply.github.com>
+Date:   Mon May 19 18:45:06 2025 -0300
+
+    Initial commit
