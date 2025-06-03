@@ -11,6 +11,8 @@ body {
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
+  justify-items: center;
+  align-items: center;
 }
 .descricao {
   color: white;
