@@ -58,9 +58,10 @@ body {
     z-index: 2;
 }
 main{
-    margin:0;
-    padding: 10px;
-    text-align: justify;
+
+/*     margin: 10px;
+    padding: 10px; */
+    text-align: justif;
     
     
 }
@@ -75,122 +76,103 @@ main{
     color: #ffff;
     text-align: center;
     font-weight: bold;
-}
- .container-fluid.px-0 {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-  #carouselExample .carousel-inner {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-  #carouselExample .card {
-    border-radius: 16px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    overflow: hidden;
-  }
-  #carouselExample .carousel-item {
-    width: 100vw;
-  }
-  #carouselExample .d-flex.flex-nowrap {
-    width: 100vw;
-    margin: 0;
-  }
-  @media (max-width: 1200px) {
-    #carouselExample .carousel-inner {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
-  }
-/* CARDS DE MAIS PROCURADOS */
-.card-group {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between !important;
-  padding: 10px;
+    text-decoration: none !important;
 }
 
-.card {
-  width: 22%;  /* 4 cards por linha no desktop com espaçamento */
-  min-width: 200px;
+.butoes-voltar{
+  background-color: #2e2e2e !important;
+  border-radius: 0px 20px 20px 20px !important;
+  font-weight: bold;
+}
+.voltar{
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Card de receita */
+
+.card-Receita{
   text-align: center;
   background-color:#6d6d6d !important;
   color: #ffff !important;
   border-radius: 25px !important;
   padding: 15px;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
 
-@media (max-width: 992px) {
-  .card {
-    width: 48%; /* 2 cards por linha em tablets */
-  }
-}
-
-@media (max-width: 576px) {
-  .card {
-    width: 100%; /* 1 card por linha no celular */
-  }
-}
-
-.card img {
+.card-Receita img{
   width: 100%;
   height: auto;
   border-radius: 25px !important;
 }
+/* Texto do card */
+.card-text{
+    text-align: justify !important;
+    padding: 15px !important;
+}
+.card-title{
+    margin-top: 10px !important;
+}
 
-/* Cards de Destilados */
-.circle-card {
-      width: 15%;
-      border-radius: 0%;
-      overflow: visible;
-      color: inherit;
-      text-decoration: none;
-      
-      
-    }
+/* Cards dos ingredientes */
 
-.card-container {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      padding: 40px;
-      margin: 0 auto;
+.card-ingredientes{
+    background-color: #2e2e2e;
+    color: #ffff;
+    border-radius: 25px !important;
+    padding: 15px;
+    text-decoration: none;
 
-    }
+}
 
-.circle-img {
+
+/* passo a passo */
+
+.ModoPreparo{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #2e2e2e;
+    color: #ffff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    
+}
+.passo{
+    background-color:#dc3545 ;
+    color: #ffff;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid #6d6d6d;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-    margin: 0 auto;
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    display: block;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.TextoPreparo{
+    font-weight: 500;
+}
+/* Conheça mais */
+.card-ConhecaMais{
+    background-color: #0000;
+    color: #ffff;
+    padding: 10px;
+    width: 100vw;
+}
+.card-ConhecaMais img,a{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    color: #ffff;
 
-.circle-img:hover {
-      transform: scale(1.05);
-    }
-
-.circle-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    }
-
-.card-title {
-      margin-top: 10px;
-      font-size: 20px;
-      font-weight: 550;
-      text-align: center;
-     
-      
-    }
-
+}
 /* Footer */
 .inicio-do-footer{
   display: flex;
@@ -203,6 +185,7 @@ main{
   height: 80px;
 
 }
+
 
 .footer {
   background: linear-gradient(135deg, #2d4363 0%, #1e3c72 100%);
@@ -239,6 +222,4 @@ main{
   opacity: 0.8;
   margin-top: 30px;
 }
-
-
 
