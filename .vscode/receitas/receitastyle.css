@@ -87,6 +87,8 @@ body {
 
 /* Conteúdo principal */
 .main-content {
+  display: flex;
+  position: relative;
   background: white;
   margin: 20px;
   border-radius: 20px;
