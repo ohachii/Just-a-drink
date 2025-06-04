@@ -1,5 +1,5 @@
 * {
-  font-family: "Satoshi", bold;
+  font-family: "Satoshi", sans-serif;
 }
 body {
   background-color: aliceblue;
@@ -11,7 +11,7 @@ body {
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
-  justify-items: center;
+
   align-items: center;
 }
 .descricao {
@@ -81,13 +81,13 @@ body {
   color: white;
 
   justify-content: space-evenly;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   text-align: center;
 }
 .tam-icon-categoria {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   margin-right: 10px;
   align-items: center;
   justify-content: center;
@@ -129,4 +129,31 @@ body {
   background-color: #1f1f1f;
   padding: 10px;
   color: white;
+  overflow: hidden;
+}
+
+.card-navegacao img {
+       width: 100%;
+      height: auto;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-top-left-radius: .375rem; 
+      border-bottom-left-radius: .375rem;
+      display: block;
+}
+.card-navegacao p {
+  font-size: 0.9rem;
+  text-align: left;
+
+
+}
+
+.card-navegacao-img {
+  overflow: hidden;
+}
+.card-navegacao h3{
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: bold;
+
 }
