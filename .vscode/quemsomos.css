@@ -1,0 +1,314 @@
+/* Variáveis de cores e fontes */
+:root {
+  --primary-color: #2d4363;
+  --secondary-color: #d3cfff;
+  --dark-color: #060607;
+  --text-color: #030605;
+  --white: #ffffff;
+  --gray: #646464;
+  --accent-color: #d84040;
+  --light-gray: rgba(3, 6, 5, 0.1);
+
+  --font-title: "Julius Sans One", sans-serif;
+  --font-subtitle: "Roxborough CF", serif;
+  --font-body: "Jura", sans-serif;
+  --font-card: "Josefin Sans", sans-serif;
+  --font-accent: "Jockey One", sans-serif;
+  --font-footer: "Satoshi", sans-serif;
+}
+
+/* Reset e estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background-color: var(--white);
+  max-width: 1440px;
+}
+
+/* Header */
+
+/* Elemento de fundo com gradiente */
+.back-rect {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 80%;
+  height: 90%;
+  background: linear-gradient(135deg, var(--primary-color) 0%, #1a2744 100%);
+  border-radius: 0px 400px 0px 0px;
+  z-index: 3;
+}
+
+/* Navbar Container */
+.navbar-container {
+  position: relative;
+  z-index: 10;
+  background-color: var(--white);
+  width: 100vw;
+  padding: 20px 40px 20px 130px;
+  margin-left: -100px;
+  margin-right: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-title);
+  font-size: 25px;
+  color: var(--text-color);
+}
+
+.logo-image {
+  width: 36px;
+  height: 44px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.logo-text {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.middle-nav {
+  display: flex;
+  gap: 32px;
+  font-family: var(--font-body);
+}
+
+.nav-item {
+  font-size: 18px;
+  color: var(--text-color);
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item:hover {
+  color: var(--accent-color);
+}
+
+#cta-button {
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  padding: 16px 26px;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+#cta-button:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.line {
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+}
+
+/* Header Content */
+.header-content {
+  position: relative;
+  z-index: 10;
+  padding-top: 80px;
+  padding-left: 130px;
+  max-width: 700px;
+  color: var(--white);
+  font-family: var(--font-title);
+  top: 150px;
+}
+
+.title-group {
+  margin-bottom: 38px;
+}
+
+.main-title {
+  font-size: 85px;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-size: 23px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* Side Image */
+.side-image {
+  position: absolute;
+  right: 0;
+  top: 200px;
+  width: 806px;
+  height: 606px;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  border-radius: 0 0 0 300px;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.side-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Placeholder para imagem quando não carregada */
+
+/* Header Line */
+.header-line {
+  position: absolute;
+  bottom: 0;
+  left: 130px;
+  width: calc(100% - 260px);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  z-index: 10;
+}
+
+/* About Section */
+.about-section {
+  top: 500px;
+  left: 240px;
+  position: relative;
+  padding: 100px 130px;
+  text-align: center;
+  background: var(--white);
+}
+
+.about-title {
+  font-family: var(--font-title);
+  font-size: 60px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.about-description {
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--text-color);
+}
+.final-da-pagina {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #2d4363;
+  margin: 80px 0 40px 0;
+  text-transform: uppercase;
+}
+.inicio-do-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo-footer {
+  width: 80px;
+  height: 80px;
+}
+
+/* Footer */
+.footer {
+  display: block;
+  position: relative;
+  background: linear-gradient(135deg, #2d4363 0%, #1e3c72 100%);
+  text-align: center;
+  padding: 40px 20px;
+  width: 100vw;
+  border-radius: 60px 60px 0 0;
+  border-top: 3px solid #00aaff;
+  color: white;
+  margin-top: 100vh;
+}
+.logo-footer {
+  width: 80px;
+  height: 80px;
+}
+.footer h2 {
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin: 0;
+  margin-top: 8px;
+  font-size: 2rem;
+}
+
+.footer p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.img-footer {
+  width: 200px;
+  height: 30px;
+  margin: 20px 0;
+}
+
+.card-group {
+  top: 1000px;
+  position: relative;
+  left: 200px;
+  bottom: 0;
+}
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.card-title {
+  font-family: var(--font-card);
+  font-size: 1.5rem;
+  color: white !important;
+  margin-bottom: 10px;
+}
+.card-body {
+  border: purple solid 1px;
+  background-color: rgba(0, 0, 0, 0.788);
+  z-index: 1;
+  margin-bottom: 100px;
+  gap: 20px;
+  clear: both;
+}
+.rating {
+  color: #ffd700;
+  font-size: 1.2rem;
+  margin: 8px 0;
+}
