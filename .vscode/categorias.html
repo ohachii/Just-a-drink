@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicons/favicon-16x16.png" type="image/x-icon">
     <title>Just a Drink - Categorias</title>
     <!-- Bootstrap -->
     <link
@@ -17,34 +18,24 @@
     />
   </head>
   <body>
-    <!-- Navbar fixa -->
-    <nav class="navbar bg-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="icons/logo.png" alt="Logo" width="30" height="24" />
-          Just a Drink
-        </a>
+     <!-- Navbar -->
+    <div class="navbar-container">
+      <!-- Logo -->
+      <div class="logo">
+        <div class="logo-image">
+          <img src="icons/logo.png" alt="Logo" />
+        </div>
+        <h1 class="logo-text">Just a Drink</h1>
       </div>
-    </nav>
 
-    <!-- Menu também fixo -->
-    <ul class="nav nav-pills menu-estilo">
-      <li class="nav-item">
-        <a class="nav-link texto-nav" href="#">Início</a>
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link active"
-          aria-current="page"
-          href="#"
-          style="background-color: white; color: black"
-          >Categorias</a
-        >
-      </li>
-      <li class="nav-item">
-        <a class="nav-link texto-nav" href="#">Quem Somos</a>
-      </li>
-    </ul>
+      <!-- Navegação -->
+      <nav class="middle-nav">
+        <a href="#" class="nav-item">Início</a>
+        <a href="#" id="cta-button" class="nav-item">Categorias</a>
+        <a href="#" class="nav-item">Quem somos</a>
+        <a href="#" class="nav-item">Nosso contato</a>
+      </nav>
+    </div>
 
     <!-- Banner - começa no topo, sob a navbar -->
     <div class="banner-container">
@@ -88,6 +79,10 @@
             </a>
           </div>
           <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <a
+              href="tropicais.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
             <div class="card card-categorias w-100">
               <img
                 src="img/card-tropicais.png"
@@ -103,8 +98,13 @@
                 <p class="card-text">Tropicais</p>
               </div>
             </div>
+            </a>
           </div>
           <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <a
+              href="refrescantes.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
             <div class="card card-categorias w-100">
               <img
                 src="img/card-refrescantes.png"
@@ -120,8 +120,13 @@
                 <p class="card-text">Refrescantes</p>
               </div>
             </div>
+            </a>
           </div>
           <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <a
+              href="semAlcool.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
             <div class="card card-categorias w-100">
               <img
                 src="img/card-semalcool.png"
@@ -137,8 +142,13 @@
                 <p class="card-text">Sem Álcool</p>
               </div>
             </div>
+            </a>
           </div>
           <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <a
+              href="cremosos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
             <div class="card card-categorias w-100">
               <img src="img/card-cremosos.png" class="card-img-top" alt="..." />
               <div class="card-body">
@@ -150,8 +160,13 @@
                 <p class="card-text">Cremosos</p>
               </div>
             </div>
+            </a>
           </div>
           <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <a
+              href="quentes.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
             <div class="card card-categorias w-100">
               <img src="img/card-quentes.png" class="card-img-top" alt="..." />
               <div class="card-body">
@@ -159,6 +174,7 @@
                 <p class="card-text">Quentes</p>
               </div>
             </div>
+            </a>
           </div>
         </div>
       </div>
@@ -169,6 +185,10 @@
       <div class="container mt-4">
         <div class="row justify-content-around">
           <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <a
+              href="saudaveis.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
             <div class="card card-categorias w-100">
               <img
                 src="img/card-classicos.png"
@@ -184,8 +204,13 @@
                 <p class="card-text">Saudáveis</p>
               </div>
             </div>
+            </a>
           </div>
           <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <a
+              href="classicos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
             <div class="card card-categorias w-100">
               <img
                 src="img/card-tropicais.png"
@@ -201,8 +226,13 @@
                 <p class="card-text">Aromáticos</p>
               </div>
             </div>
+            </a>
           </div>
           <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <a
+              href="classicos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
             <div class="card card-categorias w-100">
               <img
                 src="img/card-refrescantes.png"
@@ -218,8 +248,13 @@
                 <p class="card-text">Batidos</p>
               </div>
             </div>
+            </a>
           </div>
           <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <a
+              href="classicos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
             <div class="card card-categorias w-100">
               <img
                 src="img/card-semalcool.png"
@@ -235,10 +270,15 @@
                 <p class="card-text">Energéticos</p>
               </div>
             </div>
+            </a>
           </div>
           <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <a
+              href="classicos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
             <div class="card card-categorias w-100">
-              <img src="img/card-cremosos.png" class="card-img-top" alt="..." />
+              <img src="img/shortDrink.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <img
                   src="icons/icon-categorias-short.png"
@@ -248,20 +288,26 @@
                 <p class="card-text">Short-Drinks</p>
               </div>
             </div>
+            </a>
           </div>
           <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+            <a
+              href="classicos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
             <div class="card card-categorias w-100">
               <img
-                src="img/card-quentes.png"
+                src="img/longDrink.png"
                 class="card-img-top"
                 alt="..."
-                class="tam-icon-categoria"
+                "
               />
               <div class="card-body">
-                <img src="icons/icon-categorias-long.png" alt="" />
+                <img src="icons/icon-categorias-long.png" alt="" class="tam-icon-categoria"/>
                 <p class="card-text">Long-Drinks</p>
               </div>
             </div>
+            </a>
           </div>
         </div>
       </div>
@@ -292,6 +338,10 @@
           </a>
         </div>
         <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <a
+              href="classicos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
           <div class="card card-categorias w-100">
             <img src="img/card-gin.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -303,8 +353,13 @@
               />
             </div>
           </div>
+          </a>
         </div>
         <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <a
+              href="classicos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
           <div class="card card-categorias w-100">
             <img src="img/card-cachaca.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -316,8 +371,13 @@
               />
             </div>
           </div>
+          </a>
         </div>
         <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <a
+              href="classicos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
           <div class="card card-categorias w-100">
             <img src="img/card-tequila.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -329,8 +389,13 @@
               />
             </div>
           </div>
+          </a>
         </div>
         <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <a
+              href="classicos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
           <div class="card card-categorias w-100">
             <img src="img/card-run.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -342,8 +407,13 @@
               />
             </div>
           </div>
+          </a>
         </div>
         <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <a
+              href="classicos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
           <div class="card card-categorias w-100">
             <img src="img/card-whisky.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -355,6 +425,7 @@
               />
             </div>
           </div>
+          </a>
         </div>
       </div>
     </div>
@@ -369,6 +440,10 @@
     <div class="container mt-4">
       <div class="row">
         <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <a
+              href="classicos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
           <div class="card card-categorias w-100">
             <img src="img/campari.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -380,8 +455,13 @@
               />
             </div>
           </div>
+          </a>
         </div>
         <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <a
+              href="classicos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
           <div class="card card-categorias w-100">
             <img src="img/licor43.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -393,8 +473,13 @@
               />
             </div>
           </div>
+          </a>
         </div>
         <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <a
+              href="classicos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
           <div class="card card-categorias w-100">
             <img src="img/grandManier.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -406,21 +491,31 @@
               />
             </div>
           </div>
+          </a>
         </div>
         <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
-          <div class="card card-categorias w-100">
-            <img src="img/aperol.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">Aperol</p>
-              <img
-                src="icons/icon-destilados.png"
-                alt=""
-                style="width: 100px"
-              />
+          <a
+              href="classicos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
+            <div class="card card-categorias w-100">
+              <img src="img/aperol.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Aperol</p>
+                <img
+                  src="icons/icon-destilados.png"
+                  alt=""
+                  style="width: 100px"
+                />
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <a
+              href="classicos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
           <div class="card card-categorias w-100">
             <img src="img/malibu.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -432,8 +527,13 @@
               />
             </div>
           </div>
+          </a>
         </div>
         <div class="col-6 col-md-4 col-lg-2 mb-4 d-flex">
+          <a
+              href="classicos.html"
+              style="text-decoration: none; color: inherit; width: 100%"
+            >
           <div class="card card-categorias w-100">
             <img src="img/frangelico.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -445,6 +545,7 @@
               />
             </div>
           </div>
+          </a>
         </div>
       </div>
     </div>

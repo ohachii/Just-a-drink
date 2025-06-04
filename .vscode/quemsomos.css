@@ -1,0 +1,345 @@
+/* Variáveis de cores e fontes */
+:root {
+  --cor-primaria: #2d4363;
+  --cor-secundaria: #d3cfff;
+  --cor-escura: #060607;
+  --cor-texto: #030605;
+  --branco: #ffffff;
+  --cinza: #646464;
+  --cor-destaque: #d84040;
+  --cinza-claro: rgba(3, 6, 5, 0.1);
+
+  --fonte-titulo: "Julius Sans One", sans-serif;
+  --fonte-subtitulo: "Roxborough CF", serif;
+  --fonte-corpo: "Jura", sans-serif;
+  --fonte-cartao: "Josefin Sans", sans-serif;
+  --fonte-destaque: "Jockey One", sans-serif;
+  --fonte-rodape: "Satoshi", sans-serif;
+}
+
+/* Reset e estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-corpo);
+  color: var(--cor-texto);
+  background-color: var(--branco);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Header */
+.retangulo-fundo {
+  display: block;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 80%;
+  height: 90%;
+  background: linear-gradient(135deg, var(--cor-primaria) 0%, #1a2744 100%);
+  border-radius: 0px 400px 0px 0px;
+  z-index: 3;
+}
+
+.container-navbar {
+  position: relative;
+  z-index: 10;
+  background-color: var(--branco);
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logotipo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--fonte-titulo);
+  font-size: 25px;
+  color: var(--cor-texto);
+}
+
+.imagem-logo {
+  width: 36px;
+  height: 44px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--branco);
+}
+
+.texto-logo {
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.navegacao-meio {
+  display: flex;
+  gap: 32px;
+  font-family: var(--fonte-corpo);
+}
+
+.item-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: var(--cor-texto);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.item-nav:hover {
+  color: var(--cor-destaque);
+}
+
+#botao-cta {
+  background-color: var(--cor-secundaria);
+  border-radius: 25px;
+  padding: 16px 26px;
+  border: none;
+  font-family: var(--fonte-corpo);
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--cor-texto);
+  transition: all 0.3s ease;
+}
+
+#botao-cta:hover {
+  background-color: var(--cor-primaria);
+  color: var(--branco);
+  transform: translateY(-2px);
+}
+
+.linha {
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+}
+
+/* Conteúdo do Header */
+.conteudo-header {
+  display: block;
+  position: relative;
+  z-index: 10;
+  padding-top: 150px;
+  padding-left: 130px;
+  max-width: 700px;
+  color: var(--branco);
+  font-family: var(--fonte-titulo);
+  top: 120px;
+}
+
+.grupo-titulo {
+  margin-bottom: 38px;
+}
+
+.titulo-principal {
+  font-size: 85px;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.subtitulo {
+  font-family: var(--fonte-corpo);
+  font-size: 23px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* Imagem Lateral */
+.imagem-lateral {
+  position: absolute;
+  right: 0;
+  top: 200px;
+  width: 806px;
+  height: 606px;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  border-radius: 0 0 0 300px;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.imagem-lateral img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.titulo-sobre {
+  font-family: var(--fonte-titulo);
+  font-size: 70px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: var(--cor-texto);
+}
+
+.secao-sobre {
+  display: flex;
+  transform: translateX(20%);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0;
+  position: relative;
+  top: 450px;
+  padding: 100px 130px;
+  font-size: 25px;
+  text-align: center;
+  background: var(--branco);
+}
+
+.grupo-cartao {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 80px 130px;
+  margin: 0 auto;
+}
+
+.cartao {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  height: auto;
+  width: 300px;
+  background: var(--branco);
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.cartao:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.imagem-topo-cartao {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cartao:hover .imagem-topo-cartao {
+  transform: scale(1.05);
+}
+
+.corpo-cartao {
+  padding: 25px;
+  background: var(--branco);
+  color: var(--cor-texto);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-cartao {
+  font-family: var(--fonte-cartao);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--cor-primaria) !important;
+  font-weight: 600;
+  text-align: center;
+}
+
+.avaliacao {
+  color: #ffd700;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.categoria-cartao {
+  background: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: var(--fonte-destaque);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.container-dos-cartoes {
+  margin-top: 500px;
+  padding-bottom: 0px;
+  background: var(--branco);
+  background: linear-gradient(135deg, #2d4363 0%, #1e3c72 100%);
+  border-radius: 0 60px 60px 0px;
+}
+
+.final-da-pagina {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #2d4363;
+  margin: 80px 0 40px 0;
+  text-transform: uppercase;
+}
+
+.inicio-do-rodape {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.rodape {
+  display: block;
+  position: relative;
+  background: linear-gradient(135deg, #2d4363 0%, #1e3c72 100%);
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 60px 60px 0 0;
+  border-top: 3px solid #00aaff;
+  color: white;
+  margin-top: 70px;
+  width: 100vw;
+}
+
+.logo-rodape {
+  width: 80px;
+  height: 80px;
+}
+
+.rodape h2 {
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin: 0;
+  margin-top: 8px;
+  font-size: 2rem;
+}
+
+.rodape p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.imagem-rodape {
+  width: 30px;
+  height: 30px;
+  margin: 20px 5px;
+}

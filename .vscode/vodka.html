@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicons/favicon-16x16.png" type="image/x-icon">
     <title>Just a Drink - Navegação</title>
     <link
       href="https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap"
@@ -17,42 +18,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <div>
-      <!-- Navbar fixa -->
-      <nav class="navbar bg-light fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="icons/logo.png" alt="Logo" width="30" height="24" />
-            Just a Drink
-          </a>
+     <!-- Navbar -->
+    <div class="navbar-container">
+      <!-- Logo -->
+      <div class="logo">
+        <div class="logo-image">
+          <img src="icons/logo.png" alt="Logo" />
         </div>
+        <h1 class="logo-text">Just a Drink</h1>
+      </div>
+
+      <!-- Navegação -->
+      <nav class="middle-nav">
+        <a href="#" class="nav-item">Início</a>
+        <a href="#" id="cta-button" class="nav-item">Categorias</a>
+        <a href="#" class="nav-item">Quem somos</a>
+        <a href="#" class="nav-item">Nosso contato</a>
       </nav>
-
-      <!-- Menu também fixo -->
-      <ul class="nav nav-pills menu-estilo">
-        <li class="n</ul>av-item">
-          <a class="nav-link texto-nav" href="#">Início</a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link active"
-            aria-current="page"
-            href="#"
-            style="background-color: white; color: black"
-            >Categorias</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link texto-nav" href="#">Quem Somos</a>
-        </li>
-      </ul>
     </div>
-
-    <div style="margin-top: 150px; margin-left: 30px; margin-bottom: 20px">
-      <a href="categorias.html" class="btn btn-secondary butoes-cat">
-        <span><img src="icons/icon-voltar.png" alt="" class="voltar" /></span>
-        Voltar
-      </a>
+    
+    <div style="margin-top: 70px; margin-left: 30px; margin-bottom: 10px;">
+        <a href="categorias.html" class="btn btn-secondary butoes-cat">
+            <span><img src="icons/icon-voltar.png" alt="" class="voltar"></span> Voltar
+        </a>
     </div>
 
     <h2 style="margin-left: 30px; font-weight: bold">Vodka</h2>
