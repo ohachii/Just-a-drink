@@ -18,34 +18,24 @@
     />
   </head>
   <body>
-    <!-- Navbar fixa -->
-    <nav class="navbar bg-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="icons/logo.png" alt="Logo" width="30" height="24" />
-          Just a Drink
-        </a>
+     <!-- Navbar -->
+    <div class="navbar-container">
+      <!-- Logo -->
+      <div class="logo">
+        <div class="logo-image">
+          <img src="icons/logo.png" alt="Logo" />
+        </div>
+        <h1 class="logo-text">Just a Drink</h1>
       </div>
-    </nav>
 
-    <!-- Menu também fixo -->
-    <ul class="nav nav-pills menu-estilo">
-      <li class="nav-item">
-        <a class="nav-link texto-nav" href="PaginaInicial.html">Início</a>
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link active"
-          aria-current="page"
-          href="#"
-          style="background-color: white; color: black"
-          >Categorias</a
-        >
-      </li>
-      <li class="nav-item">
-        <a class="nav-link texto-nav" href="#">Quem Somos</a>
-      </li>
-    </ul>
+      <!-- Navegação -->
+      <nav class="middle-nav">
+        <a href="#" class="nav-item">Início</a>
+        <a href="#" id="cta-button" class="nav-item">Categorias</a>
+        <a href="#" class="nav-item">Quem somos</a>
+        <a href="#" class="nav-item">Nosso contato</a>
+      </nav>
+    </div>
 
     <!-- Banner - começa no topo, sob a navbar -->
     <div class="banner-container">

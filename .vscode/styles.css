@@ -6,60 +6,110 @@ body {
   margin: 0;
   padding: 0;
 }
-.card-body {
+/* Navbar */
+.navbar-container {
+  background-color: #2d4363;
+  width: 100%;
+  padding: 12px 40px;
   display: flex;
-  height: 100%;
-  flex-direction: column;
   justify-content: space-between;
-
   align-items: center;
+
+  position: fixed;  /* fixa a navbar no topo */
+  top: 0;
+  left: 0;
+  z-index: 1000;    /* bem na frente */
+
 }
-.descricao {
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-image img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1); /* Deixa a logo branca */
+}
+
+.logo-text {
+  font-family: "Julius Sans One", sans-serif;
   color: white;
+  font-size: 1.5rem;
+  margin-top: 7px;
+
 }
-.tempo-preparo {
-  color: #dddbdb;
+
+.middle-nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  position: relative;
+
+}
+
+.nav-item:hover {
+  color: #d3cfff;
+}
+
+/* Aba selecionada */
+.nav-item.selected {
+  color: #d3cfff;
   font-weight: bold;
 }
-/* Navbar fixa no topo */
-.navbar {
-  position: fixed;
-  top: 0;
+
+.nav-item.selected::after {
+  content: "";
+  position: absolute;
   width: 100%;
-  z-index: 1050;
-  margin: 0;
-  background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  height: 2px;
+  background-color: #d3cfff;
+  bottom: -4px;
+  left: 0;
+
 }
 
-/* Menu fixo abaixo da navbar */
-.menu-estilo {
-  background-color: #2d4363;
-  border-radius: 10px;
-  padding: 10px;
-  position: fixed;
-  top: 56px; /* Altura da navbar */
-  width: 100%;
-  z-index: 1040;
-  margin: 0;
+/* Botão CTA */
+#cta-button {
+  background-color: #d3cfff;
+  color: #030605;
+  padding: 8px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.texto-nav {
+#cta-button:hover {
+  background-color: lightslategray;
   color: white;
-  margin: 0;
+  transform: translateY(-2px);
 }
+
+
+
+/* teste */
 
 .banner-container {
   position: relative;
-  margin-top: 0; /* Removemos o margin-top anterior */
-  z-index: 1;
+  margin-top: 56; /* Removemos o margin-top anterior */
+  z-index: 5;
 }
 
 .banner-img {
   width: 100%;
   display: block;
   border-radius: 0;
-  margin-top: 56px; /* Apenas a altura da navbar */
+
 }
 
 .content-area {
@@ -144,7 +194,6 @@ body {
 .card-navegacao p {
   font-size: 0.9rem;
   text-align: left;
-
 
 }
 
