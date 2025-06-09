@@ -18,7 +18,7 @@ body {
   position: fixed;  /* fixa a navbar no topo */
   top: 0;
   left: 0;
-  z-index: 1000;    /* bem na frente */
+  z-index: 1400;    /* bem na frente */
 
 }
 
@@ -101,8 +101,9 @@ body {
 
 .banner-container {
   position: relative;
-  margin-top: 56; /* Removemos o margin-top anterior */
+  margin-top: 56px; 
   z-index: 5;
+
 }
 
 .banner-img {
@@ -134,6 +135,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.06);
 }
 .tam-icon-categoria {
   width: 35px;
@@ -180,6 +182,8 @@ body {
   padding: 10px;
   color: white;
   overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+            0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
 .card-navegacao img {
