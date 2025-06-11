@@ -58,7 +58,6 @@ body {
   color: #2d4363 !important;
 }
 
-/* Botão voltar */
 .voltar-container {
   margin-top: 150px;
   margin-left: 30px;
@@ -98,7 +97,6 @@ body {
   padding: 40px;
 }
 
-/* Títulos da receita */
 .titulo-receita {
   text-align: center;
   font-size: 3rem;
@@ -118,21 +116,21 @@ body {
 }
 
 .image-container {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   display: flex;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   justify-content: center;
-  margin: 40px 0;
+  align-items: center;
+  border-radius: 15px;
+  height: 400px;
 }
 
 .img-drink {
   width: 100%;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
   border-radius: 15px;
-  transition: transform 0.3s ease;
-}
-
-.img-drink:hover {
-  transform: scale(1.05);
 }
 
 .receita-grid {
@@ -141,6 +139,7 @@ body {
   gap: 60px;
   margin: 60px 0;
 }
+
 .preparo-section {
   grid-column: 1 / 3;
   grid-row: 2 / 3;
@@ -149,12 +148,15 @@ body {
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-.ingredientes-section,
-.preparo-section {
+.ingredientes-section {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
   background: #f8f9fa;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  overflow-y: auto;
 }
 
 .section-title {
@@ -232,15 +234,28 @@ body {
   margin: 80px 0 40px 0;
   text-transform: uppercase;
 }
+
 .inicio-do-footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 .logo-footer {
   width: 80px;
   height: 80px;
+}
+
+.drink-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.card-content {
+  display: flex;
+  max-width: 70%;
+  gap: 15px;
 }
 
 .drinks-grid {
@@ -261,17 +276,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.drink-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-}
-
-.card-content {
-  display: flex;
-  max-width: 70%;
-  gap: 15px;
-}
-
 .drink-imagem {
   display: flex;
   background-size: cover;
@@ -280,25 +284,22 @@ body {
   text-align: center;
   min-width: 50%;
 }
-
 .drink-info h5 {
   font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 5px;
-  color: white;
 }
 
 .categoria {
   color: #aaa;
   font-size: 0.9rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .rating {
   color: #ffd700;
   font-size: 1.2rem;
-  margin: 8px 0;
+  letter-spacing: 1px;
 }
 
 .descricao {
@@ -335,7 +336,6 @@ body {
 .img-footer {
   width: 200px;
   height: 30px;
-  margin: 20px 0;
 }
 
 .rights {
@@ -371,13 +371,5 @@ body {
 
   .voltar-container {
     margin-left: 20px;
-  }
-
-  .container {
-    padding: 20px;
-  }
-
-  .main-content {
-    margin: 10px;
   }
 }
