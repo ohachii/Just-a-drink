@@ -1,7 +1,6 @@
-
 body {
   background-color: aliceblue !important;
-  margin: 0;
+  margin: 15px;
   padding: 0;
 }
 /* Banner inicial */
@@ -19,17 +18,16 @@ body {
 }
 
 main{
-    margin:0;
-    padding: 10px;
+    margin:30px !important;
+    padding: 0px !important;
     text-align: justify;
     
     
 }
-
 .TituloDestaque{
-    margin-top: 49px;
-    margin-bottom: 30px;
-    margin-left: 30PX;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    margin-left: 30px;
     background-color: rgb(58, 58, 58);
     border-radius: 0px 20px 20px 20px;
     width:190px ;
@@ -41,7 +39,6 @@ main{
 #desc{
     font-size: 24px;
 }
-
 /* CARDS DE MAIS PROCURADOS */
 .card-group {
   display: flex;
@@ -57,7 +54,7 @@ main{
   background-color:#121212 !important;
   color: #ffffff !important;
   border-radius: 25px !important;
-  padding: 10px;
+  padding: 15px;
   transition: transform 0.3s ease;
   text-decoration: none;
 }
