@@ -157,6 +157,12 @@ body {
   font-weight: bold;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.06);
+
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.card-categorias:hover {
+  transform: scale(0.95);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
 }
 .tam-icon-categoria {
   width: 35px;
@@ -166,9 +172,10 @@ body {
   justify-content: center;
 }
 .centralizacao-categorias {
-  justify-content: space-around !important;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around !important;
+
 }
 
 .footer {
@@ -230,4 +237,10 @@ body {
   text-align: center;
   font-weight: bold;
 
+}
+.card-body .mb-10px {
+  margin-bottom: 10px !important;
+  color: white; 
+  font-size: small; 
+  font-weight: bold;
 }
