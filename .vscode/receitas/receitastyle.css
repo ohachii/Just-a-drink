@@ -345,31 +345,129 @@ body {
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
-  .receita-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
+@media (max-width: 992px) {
+  /* Navbar */
+  .navbar-collapse {
+    padding: 1rem;
+    border-radius: 0 0 15px 15px;
   }
 
-  .titulo-receita {
-    font-size: 2.2rem;
-  }
 
-  .img-drink {
-    width: 250px;
-    height: 320px;
-  }
-
-  .drinks-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .card-content {
-    flex-direction: column;
+  .navbar-nav .nav-link {
+    padding: 10px 15px;
     text-align: center;
   }
 
+
+  /* Receita grid */
+  .receita-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+
+  .image-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .img-drink {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+
+  /* Seções */
+  .ingredientes-section,
+  .preparo-section {
+    padding: 20px;
+    height: auto;
+  }
+
+
+  /* Títulos */
+  .titulo-receita {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+
+  .subtitulo-receita {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+
+  /* Botão voltar */
   .voltar-container {
+    margin-top: 120px;
     margin-left: 20px;
+    text-align: left;
+  }
+
+
+  /* Cards */
+  .drinks-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+
+  .card-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+
+
+  .drink-imagem {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+
+  .drink-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+
+  .drink-info h5 {
+    font-size: 1.3rem;
+  }
+
+
+  /* Footer */
+  .footer h2 {
+    font-size: 1.6rem;
+  }
+
+
+  .footer p {
+    font-size: 1rem;
+  }
+
+
+  .logo-img {
+    width: 35px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+
+  .logo-text {
+    font-size: 1.2rem;
   }
 }
