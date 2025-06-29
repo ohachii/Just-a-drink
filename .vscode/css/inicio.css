@@ -1,33 +1,49 @@
 body {
-  background-color: aliceblue !important;
-  margin: 15px;
+  background-color: aliceblue;
+  margin: 0;
   padding: 0;
 }
-/* Banner inicial */
-.banner-img {
-    width: 100%;
-    margin-top: 20px;     /* Espaço abaixo do menu */
-    border-radius: 15px;  /* Bordas arredondadas */
-    display: block;
+
+main{
+  margin-left: 60px;
+  margin-right: 60px;
 }
+
+/* Banner da Tela inicial */
 .banner-container {
   position: relative;
   width: 100%;
   height: 50% !important;
   overflow: hidden;
+  margin-top: 56px; 
+  z-index: 5;
 }
 
-main{
-    margin:30px !important;
-    padding: 0px !important;
-    text-align: justify;
-    
-    
+.banner-img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 0px 30px 30px;
+  max-height: px;
+  object-fit: cover;
 }
-.TituloDestaque{
+
+.banner-gradient {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 90%, rgba(0,0,0,0.85) 100%);
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+/* Textos de Destaque */
+.Destaque{
+    border: 0;
     margin-top: 5%;
     margin-bottom: 4%;
-    margin-left: 30px;
     background-color: rgb(58, 58, 58);
     border-radius: 0px 20px 20px 20px;
     width:190px ;
@@ -36,25 +52,20 @@ main{
     text-align: center;
     font-weight: bold;
 }
-#desc{
-    font-size: 24px;
-}
-/* CARDS DE MAIS PROCURADOS */
+
+/* Carrossel de mais procurados */
+
 .card-group {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between !important;
-  padding: 80px;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-.card {
-  width: 25%;  /* 4 cards por linha no desktop com espaçamento */
-  min-width: 200px;
-  text-align: center;
+.card{
   background-color:#121212 !important;
   color: #ffffff !important;
   border-radius: 25px !important;
-  padding: 15px;
+  padding: 20px;
   transition: transform 0.3s ease;
   text-decoration: none;
 }
@@ -63,75 +74,97 @@ main{
     transform: scale(0.90);
 }
 
-@media (max-width: 992px) {
-  .card {
-    width: 48%; /* 2 cards por linha em tablets */
-  }
-}
-
-@media (max-width: 576px) {
-  .card {
-    width: 100%; /* 1 card por linha no celular */
-  }
-}
-
 .card img {
   width: 100%;
   height: auto;
-  border-radius: 25px !important;
+  border-radius: 30px !important;
 }
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: brightness(0) saturate(100%);
+
+.card-title{
+    text-align: center;
 }
+
 /* Cards de Destilados */
 .circle-card {
-      width: 15%;
-      border-radius: 0%;
-      overflow: visible;
-      color: inherit;
-      text-decoration: none;
-      
-      
-    }
+    width: 18%;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: inherit;
+}
 
 .card-container {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      padding: 40px;
-      margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    
+}
 
-    }
-
+/* Imagem circular */
 .circle-img {
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     overflow: hidden;
     border: 1px solid #6d6d6d;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
     margin: 0 auto;
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    display: block;
-    }
+}
 
 .circle-img:hover {
-      transform: scale(0.90);
-    }
+    transform: scale(0.95);
+}
 
 .circle-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    }
+    padding: 10px;
+    
+}
 
 .card-title {
-      margin-top: 10px;
-      font-size: 20px;
-      font-weight: 550;
-      text-align: center;
-     
-      
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+    .circle-card {
+        width: 40%;
     }
+
+    .circle-img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsividade para o banner */
+@media (max-width: 768px) {
+  .banner-img {
+    max-height: 180px;
+  }
+  .banner-gradient {
+    height: 20%;
+  }
+}
