@@ -127,6 +127,7 @@ body {
   background-color: currentColor;
 }
 
+/* Ajuste para a navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -137,11 +138,13 @@ body {
   padding: 10px 20px;
 }
 #navbarNav {
+  position: fixed;
   margin-top: 0 auto;
   top: 2.5vh;
 }
 .navbar-collapse {
   position: fixed;
+
   top: 70px;
   right: 0;
   width: auto;
