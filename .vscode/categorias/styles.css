@@ -214,7 +214,9 @@ body {
 .card-navegacao {
   margin-top: 1em;
 }
-/* Ajuste para os cards */
+.card-text {
+  margin-bottom: 0;
+}
 .card-navegacao,
 .card-title {
   display: flex;
@@ -222,47 +224,48 @@ body {
   background-color: #1f1f1f;
   color: white;
   overflow: hidden;
-}
 
-.card-navegacao img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  border-top-left-radius: 0.375rem;
-  border-bottom-left-radius: 0.375rem;
-  display: block;
-}
-.card-navegacao p {
-  font-size: 0.9rem;
-  text-align: left;
-}
+  .card-navegacao img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+    display: block;
+  }
+  .card-navegacao p {
+    font-size: 0.9rem;
+    text-align: left;
+  }
 
-.card-navegacao-img {
-  overflow: hidden;
-}
-.card-navegacao h3 {
-  font-size: 1.1rem;
-  text-align: center;
-  font-weight: bold;
-}
-.card-body .mb-10px {
-  margin-bottom: 10px !important;
-  color: white;
-  font-size: small;
-  font-weight: bold;
-}
+  .card-navegacao-img {
+    overflow: hidden;
+  }
+  .card-navegacao h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  .card-body .mb-10px {
+    margin-bottom: 10px !important;
+    color: white;
 
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-.tempo-preparo {
-  margin-top: auto;
-  color: white;
-  font-weight: bold;
-  font-size: small;
-  text-align: center;
+    font-size: small;
+    font-weight: bold;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .tempo-preparo {
+    margin-top: auto;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    text-align: center;
+  }
 }
