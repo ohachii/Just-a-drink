@@ -1,10 +1,12 @@
 * {
   font-family: "Satoshi", sans-serif;
+  text-decoration: none !important;
 }
 body {
   background-color: aliceblue;
   margin: 0;
   padding: 0;
+  
 }
 /* Navbar */
 .navbar-container {
