@@ -211,6 +211,9 @@ body {
   font-weight: bold;
   font-size: small;
 }
+.card-navegacao {
+  margin-top: 1em;
+}
 /* Ajuste para os cards */
 .card-navegacao,
 .card-title {
