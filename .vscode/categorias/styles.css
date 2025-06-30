@@ -6,7 +6,6 @@ body {
   background-color: aliceblue;
   margin: 0;
   padding: 0;
-  
 }
 /* Navbar */
 .navbar-container {
@@ -17,11 +16,10 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  position: fixed;  /* fixa a navbar no topo */
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1400;    /* bem na frente */
-
+  z-index: 1400;
 }
 
 .logo {
@@ -33,7 +31,7 @@ body {
 .logo-image img {
   width: 30px;
   height: 30px;
-  filter: brightness(0) invert(1); /* Deixa a logo branca */
+  filter: brightness(0) invert(1);
 }
 
 .logo-text {
@@ -41,14 +39,12 @@ body {
   color: white;
   font-size: 1.5rem;
   margin-top: 7px;
-
 }
 
 .middle-nav {
   display: flex;
   gap: 30px;
   align-items: center;
-
 }
 
 .nav-item {
@@ -57,7 +53,6 @@ body {
   font-size: 1.1rem;
   transition: color 0.3s ease;
   position: relative;
-
 }
 
 .nav-item:hover {
@@ -78,7 +73,6 @@ body {
   background-color: #d3cfff;
   bottom: -4px;
   left: 0;
-
 }
 
 
@@ -102,7 +96,7 @@ body {
   width: 100%;
   height: 50% !important;
   overflow: hidden;
-  margin-top: 56px; 
+  margin-top: 56px;
   z-index: 5;
 }
 
@@ -121,7 +115,12 @@ body {
   width: 100%;
   height: 40%;
   pointer-events: none;
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 90%, rgba(0,0,0,0.85) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.45) 90%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
 }
@@ -137,7 +136,7 @@ body {
 }
 
 .content-area {
-  padding-top: 56px; /* Apenas a altura do menu */
+  padding-top: 56px;
   position: relative;
   z-index: 2;
 }
@@ -153,8 +152,7 @@ body {
   background-color: #1f1f1f;
   padding: 10px;
   color: white;
-
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -164,7 +162,7 @@ body {
 }
 .card-categorias:hover {
   transform: scale(0.95);
-  box-shadow: 0 8px 12px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
 }
 .tam-icon-categoria {
   width: 35px;
@@ -176,8 +174,7 @@ body {
 .centralizacao-categorias {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around !important;
-
+  justify-content: space-between;
 }
 
 .footer {
@@ -207,42 +204,65 @@ body {
   width: 30px;
   height: 30px;
 }
+.tempo-preparo {
+  display: flex;
+  justify-self: flex-start !important;
+  color: white;
+  font-weight: bold;
+  font-size: small;
+}
 .card-navegacao {
+  margin-top: 1em;
+}
+/* Ajuste para os cards */
+.card-navegacao,
+.card-title {
+  display: flex;
+  justify-content: space-between;
   background-color: #1f1f1f;
-  padding: 10px;
   color: white;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
-            0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
 .card-navegacao img {
-       width: 100%;
-      height: auto;
-      aspect-ratio: 1/1;
-      object-fit: cover;
-      border-top-left-radius: .375rem; 
-      border-bottom-left-radius: .375rem;
-      display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+  display: block;
 }
 .card-navegacao p {
   font-size: 0.9rem;
   text-align: left;
-
 }
 
 .card-navegacao-img {
   overflow: hidden;
 }
-.card-navegacao h3{
+.card-navegacao h3 {
   font-size: 1.1rem;
   text-align: center;
   font-weight: bold;
-
 }
 .card-body .mb-10px {
   margin-bottom: 10px !important;
-  color: white; 
-  font-size: small; 
+  color: white;
+  font-size: small;
   font-weight: bold;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.tempo-preparo {
+  margin-top: auto;
+  color: white;
+  font-weight: bold;
+  font-size: small;
+  text-align: center;
 }
