@@ -6,6 +6,7 @@ body {
   background-color: aliceblue;
   margin: 0;
   padding: 0;
+  padding-top: 70px; /* Espaço para a altura da navbar */
 }
 /* Navbar */
 .navbar-container {
@@ -75,6 +76,46 @@ body {
   left: 0;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+  background-color: #2d4363;
+}
+
+/* Ajuste para o menu colapsado */
+.navbar-collapse {
+  background-color: #2d4363; /* Cor de fundo consistente */
+  z-index: 1040; /* Garante que o menu fique acima dos elementos */
+}
+
+/* Ajuste para os itens do menu */
+.navbar-nav {
+  display: flex;
+  flex-direction: column; /* Organiza os itens verticalmente no menu colapsado */
+  gap: 10px; /* Espaçamento entre os itens */
+  padding: 10px 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #d3cfff; /* Cor ao passar o mouse */
+}
+
+/* Ajuste para o botão de toggle */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
 
 #cta-button {
   background-color: #d3cfff;
