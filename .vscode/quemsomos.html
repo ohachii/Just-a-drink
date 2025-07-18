@@ -24,6 +24,8 @@
       href="favicons/faviconBlack.png"
       type="image/x-icon"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="pagina">
@@ -39,11 +41,34 @@
             <h1 class="texto-logo">Just a Drink</h1>
           </div>
 
-          <nav class="navegacao-meio">
-            <a href="Inicio.html" class="item-nav">Início</a>
-            <a href="quemsomos.html" id="botao-cta" class="item-nav">Quem somos?</a>
-            <a href="categorias/categorias.html" class="item-nav">Categorias</a>
-            <a href="#footer"  class="item-nav">Nosso contato</a>
+          <nav class="navbar navbar-expand-xl">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="Inicio.html" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a href="quemsomos.html" id="botao-cta" class="nav-link"
+                    >Quem somos?</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="categorias/categorias.html" class="nav-link"
+                    >Categorias</a
+                  >
+              </ul>
+            </div>
           </nav>
         </div>
 
@@ -51,13 +76,16 @@
           <div class="grupo-titulo">
             <h2 class="titulo-principal">JUST A DRINK</h2>
             <p class="subtitulo">
-              Bem-vindo ao Just a Drink, o seu destino favorito para descobrir,
+              Bem-vindo ao Just a Drink, o seu destino favorito para
+              descobrir,<br />
               experimentar e se apaixonar por receitas incríveis de drinks!
             </p>
           </div>
         </div>
 
-        <div class="imagem-lateral"><img src="img/banner4.png" /></div>
+        <div class="imagem-lateral d-none d-xl-block">
+          <img src="img/banner4.png" />
+        </div>
 
         <div class="linha-header"></div>
       </header>
@@ -131,10 +159,19 @@
         <h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-top: 20px; margin-left: 2%;">Favorito do Autores</h3>
         <p style="margin-left: 2%;">Negroni</p>
         <video src="NEGRONI _ Drink Clássico com Campari _ RECEITA E DICAS.mp4" style="width: 400px; height: 300px; align-items: center; justify-content: center; margin-left: 30%;"></video>
-
-        
       </div>
-
+    </div>
+    <h2 style="text-align: center;margin-top:90px">Nossa Localização</h2>
+    <div style="display: flex; justify-content: center; margin-top: 20px">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15594.123456789!2d-40.7416667!3d-16.2311111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDEzJzUyLjAiUyA0MMKwNDQnMzAnMCJX!5e0!3m2!1spt-BR!2sbr!4v0000000000000"
+        width="80%"
+        height="450"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
       <!-- Footer -->
       <footer class="rodape" id="footer">
         <div class="inicio-do-rodape">
